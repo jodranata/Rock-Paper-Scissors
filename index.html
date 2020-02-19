@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="A vanilla javascript rock paper scissors game"
+    />
+    <meta
+      name="keywords"
+      content="vanilla, javascript, rock, paper, scissors, game,"
+    />
+    <title>Rock-Paper-Scissors Game</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="rps.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Rock-Paper-Scissors Game</h1>
+    </header>
+
+    <div class="score-board">
+      <div class="score-label" id="you">you</div>
+      <div class="score-label" id="comp">comp</div>
+      <span class="score" id="user-score">0</span>
+      <span class="score" id="marker">:</span>
+      <span class="score" id="comp-score">0</span>
+    </div>
+    <div class="choose" id="user-choose">
+      you choose: <br /><span class="choice" id="user-span">rock</span>
+    </div>
+    <div class="choose" id="comp-choose">
+      comp choose: <br /><span class="choice" id="comp-span">rock</span>
+    </div>
+
+    <div class="container">
+      <div class="option" id="user">
+        <div class="icon" id="rock">
+          <img src="rock.png" alt="rock" />
+        </div>
+        <div class="icon" id="paper">
+          <img src="paper.png" alt="paper" />
+        </div>
+        <div class="icon" id="scissors">
+          <img src="scissors.png" alt="scissors" />
+        </div>
+        <span class="versus" id="v">V</span>
+      </div>
+
+      <div class="option" id="computer">
+        <span class="versus" id="s">S</span>
+        <div class="icon" id="comp-choice">
+          <img src="rock.png" alt="rock" />
+        </div>
+      </div>
+
+      <div class="notification" id="notification">you're Lucky</div>
+    </div>
+
+    <button class="game-button">START</button>
+    <script src="rps.js"></script>
+  </body>
+</html>

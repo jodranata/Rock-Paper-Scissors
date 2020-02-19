@@ -1,0 +1,325 @@
+:root, * {
+    margin: 0;
+    padding: 0;
+    font-family: "Assistant", sans-serif;
+    font-weight: 700;
+}
+
+
+img {
+    max-width: 120px;
+    max-height: 120px;
+    /* max-width: 100%;
+    max-height: 100%; */
+}
+
+
+
+body {
+    background-color: rgb(2, 100, 100);
+}
+
+header {
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.score-board {
+    width: 400px;
+    height: 170px;
+    border: solid 2px whitesmoke;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+.score-label {
+    font-size: 35px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    position: absolute;
+    padding-top: 5px;
+    text-align: center;
+    width: 49.5%;
+    
+}
+
+#you {
+    border-top-left-radius: 18px;
+}
+
+#comp {
+    right: 0;
+    border-top-right-radius: 18px;
+}
+
+
+.score {
+    font-size: 80px;
+    color: whitesmoke;
+    position: absolute;
+    top: 35%;
+    width: 100px;
+    text-align: center;
+    
+}
+
+#user-score{
+    left: 12%;
+}
+
+#marker {
+    left: 37%;
+}
+
+#comp-score {
+    right: 11%;
+}
+
+.choose {
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50px;
+    margin: 10px 150px;
+    text-align: center;
+}
+
+#comp-choose{
+    right: 0px;
+}
+
+#user-choose {
+    left: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+}
+
+.option {
+    width: 50%;
+    height: 400px;
+    max-width: 50%;
+    max-height: 400px;
+    position: relative;
+}
+
+
+.icon {
+    border: solid 5px whitesmoke;
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all 0.15s ease-in;
+}
+
+#rock{
+    top: 0;
+    left: 35%;
+}
+
+#paper {
+    bottom: 0;
+    left: 20%;
+}
+
+#scissors {
+    bottom: 0;
+    left: 50%;
+}
+
+#computer .icon {
+    background-color: white;
+    border: solid 5px darkslategray;
+}
+
+#user .icon:hover {
+    background-color: rgba(231, 231, 231, 0.562);
+    cursor: pointer;
+}
+
+
+
+#notification {
+    font-size: 55px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 20%;
+    color: whitesmoke;
+}
+
+.winClass {
+    border-color: rgb(14, 153, 84);
+    box-shadow: 0 0 10px rgba(35, 236, 9, 0.822);    
+}
+
+.loseClass {
+    border-color: rgb(104, 5, 2);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.616);
+}
+.drawClass {
+    border-color: rgb(152, 155, 0);
+    box-shadow: 0 0 10px rgba(248, 235, 45, 0.74);
+}
+
+.game-button {
+    width: 15%;
+    height: 50px;
+    font-size: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -400px;
+    border: 2px solid black;
+    background-color: transparent;
+    color: whitesmoke;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+}
+
+.game-button:hover {
+    background-color: rgb(240, 240, 240);
+    color: rgb(2, 100, 100);
+}
+
+@media screen and (max-width: 1355px) {
+    .icon {
+        width: 25%;
+        height: 150px;
+    }
+
+    #rock {
+        top: 5%;
+    }
+    #paper, #scissors {
+        bottom: 10%;
+    }
+    .choose{
+        font-size: 35px;
+        margin: 30px 50px;
+    }
+}
+
+#comp-choice {
+    top: 25%;
+    left: 35%;
+}
+
+.versus {
+    text-transform: uppercase;
+    font-size:  100px;
+    color: whitesmoke;
+    position: absolute;
+    top: 35%;
+    
+    width: 100px;
+    text-align: center;
+}
+
+#v {
+    right: -1%;
+}
+
+#s {
+    left: -1%;
+}
+
+
+@media screen and (max-width: 985px) {
+    .score-board {
+        width: 250px;
+        height: 120px;
+        margin: 20px auto;
+        position: relative;
+    }
+    
+    .score-label {
+        font-size: 20px;
+        top: 15px;
+    }
+    .score {
+        font-size: 50px;
+    }
+    .versus {
+        font-size: 75px;
+    }
+    
+    #v {
+        right: -5%;
+    }
+    
+    #s {
+        left: -5%;
+    }
+
+    img {
+        max-width: 85px;
+        max-height: 85px;
+        /* max-width: 100%;
+        max-height: 100%; */
+    }
+    .option {
+        height: 300px;
+    }
+    .icon{
+        height: 110px;
+    }
+    .choose{
+        font-size: 25px;
+    }
+    .game-button {
+        margin-top: -300px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .option {
+        height: 280px;
+    }
+
+    .icon{
+        height: 100px;
+    }
+
+    .versus {
+        font-size: 55px;
+    }
+
+    #v {
+        right: -8%;
+    }
+    
+    #s {
+        left: -8%;
+    }
+
+    
+     img {
+        max-width: 70px;
+        max-height: 70px;
+        
+    }
+/*
+    .icon {
+        height: 80px;
+    } */
+}
